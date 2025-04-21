@@ -20,9 +20,29 @@ Un **empleado virtual con inteligencia artificial** que:
 
 ## 📦 Estructura del proyecto
 
-- `backend/` → API y lógica (NestJS)
-- `frontend/` → Dashboard del sistema (React)
-- `docs/` → Documentación y esquemas de arquitectura
+saas-empleadoia/
+│
+├── apps/
+│   ├── backend/
+│   └── frontend/
+│
+├── libs/
+│   ├── ia/                  # Lógica para el empleado con IA y manejo de modelos
+│   ├── db/                  # Conexión a la base de datos
+│   ├── shared/              # Utilidades comunes, tipos, validaciones
+│   └── utils/               # Funciones auxiliares reutilizables
+│
+├── scripts/                 # Scripts para migraciones, carga de datos, etc
+│   ├── seed.ts              # Script para poblar datos ficticios (productos, stock, etc.)
+│   └── migrate.ts           # Migraciones iniciales o futuras
+│
+├── docs/                    # Documentación extra, como diagramas, decisiones técnicas
+│   ├── plan.md              # Plan general del proyecto
+│   └── decisiones.md        # Decisiones técnicas explicadas
+│
+├── .gitignore
+├── README.md
+└── package.json
 
 ---
 
