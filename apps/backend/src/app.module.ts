@@ -6,6 +6,8 @@ import { PedidosModule } from './pedidos/pedidos.module';
 import { AuthModule } from './auth/auth.module'; 
 import { APP_GUARD } from '@nestjs/core';
 import { JwtAuthGuard } from './auth/jwt-auth.guard';
+import { UsuariosModule } from './usuarios/usuarios.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @Module({
   imports: [
@@ -23,6 +25,8 @@ import { JwtAuthGuard } from './auth/jwt-auth.guard';
     ProductosModule,
     PedidosModule,
     AuthModule,
+    UsuariosModule,
+    DashboardModule,
   ],
   providers: [
     {

@@ -16,46 +16,50 @@ export class AuthService {
   ) {}
 
   async register(createUserDto: CreateUserDto) {
-    const { correo, password } = createUserDto;
+    const { username, correo, password } = createUserDto;
 
-    const usuarioExistente = await this.usuarioRepo.findOneBy({ correo });
+    const usuarioExistente = await this.usuarioRepo.findOneBy({ username });
     if (usuarioExistente) {
-      throw new UnauthorizedException('El correo ya está registrado');
+      throw new UnauthorizedException('El nombre de usuario ya está registrado');
     }
 
     const hash = await bcrypt.hash(password, 10);
     const nuevoUsuario = this.usuarioRepo.create({
-      ...createUserDto,
+      username,
+      correo,
       password: hash,
     });
 
     const usuarioGuardado = await this.usuarioRepo.save(nuevoUsuario); 
     return {
       id: usuarioGuardado.id,
+      username: usuarioGuardado.username,
       correo: usuarioGuardado.correo,
       mensaje: 'Usuario creado exitosamente',
     };
   }
 
   async login(loginDto: LoginDto) {
-    const usuario = await this.usuarioRepo.findOneBy({ correo: loginDto.correo });
+    const { username, password } = loginDto;
+    const usuario = await this.usuarioRepo.findOneBy({ username });
 
     if (!usuario) {
       throw new UnauthorizedException('Credenciales inválidas');
     }
 
-    const passwordOk = await bcrypt.compare(loginDto.password, usuario.password);
+    const passwordOk = await bcrypt.compare(password, usuario.password);
     if (!passwordOk) {
       throw new UnauthorizedException('Credenciales inválidas');
     }
 
-    const payload = { correo: usuario.correo, id: usuario.id };
+    const payload = { id: usuario.id, username: usuario.username };
     const token = await this.jwtService.signAsync(payload);
 
     return {
       access_token: token,
       usuario: {
         id: usuario.id,
+        username: usuario.username,
         correo: usuario.correo,
       },
     };
