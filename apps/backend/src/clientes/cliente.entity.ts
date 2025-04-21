@@ -14,8 +14,11 @@ export class Cliente {
   @Column({ nullable: true })
   email: string;
 
+  @Column({ nullable: true })
+  direccion?: string;
+
   @Column({ type: 'jsonb', nullable: true })
-  preferencias: any; // Ej: { marcasFavoritas: ['Hikvision', 'EZVIZ'] }
+  preferencias?: any; // Ej: { marcasFavoritas: ['Hikvision', 'EZVIZ'] }
 
   @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
   creadoEn: Date;
