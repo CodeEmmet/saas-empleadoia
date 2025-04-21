@@ -1,20 +1,34 @@
-// src/components/Sidebar.tsx
-import { Link } from 'react-router-dom';
+// src/components/Header.tsx
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import styles from './Header.module.scss';
 
-const Sidebar = () => {
+const Header: React.FC = () => {
+  const navigate = useNavigate();
+  const username = localStorage.getItem('username');
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('username');
+    navigate('/login');
+  };
+
   return (
-    <aside style={{ width: '200px', background: '#1f2937', color: 'white', height: '100vh', padding: '1rem' }}>
-      <h2>Panel</h2>
-      <nav>
-        <ul style={{ listStyle: 'none', padding: 0 }}>
-          <li><Link style={{ color: 'white', textDecoration: 'none' }} to="/dashboard">Inicio</Link></li>
-          <li><Link style={{ color: 'white', textDecoration: 'none' }} to="/usuarios">Usuarios</Link></li>
-          <li><Link style={{ color: 'white', textDecoration: 'none' }} to="/productos">Productos</Link></li>
-          <li><Link style={{ color: 'white', textDecoration: 'none' }} to="/pedidos">Pedidos</Link></li>
-        </ul>
-      </nav>
-    </aside>
+    <header className={styles.header}>
+      <input type="text" placeholder="Buscar..." className={styles.searchBar} />
+      <div className={styles.profile}>
+        <span className={styles.user}>Hola, {username}</span>
+        <img
+          src="https://via.placeholder.com/40"
+          alt="Profile"
+          className={styles.avatar}
+        />
+        <button className={styles.logoutButton} onClick={handleLogout}>
+          Cerrar sesión
+        </button>
+      </div>
+    </header>
   );
 };
 
-export default Sidebar;
+export default Header;

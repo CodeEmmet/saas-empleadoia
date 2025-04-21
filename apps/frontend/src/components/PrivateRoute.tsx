@@ -1,15 +1,22 @@
-import React from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 const PrivateRoute = () => {
-  const token = localStorage.getItem('token');
+  const [isAuth, setIsAuth] = useState<boolean | null>(null);
 
-  if (!token) {
-    // Si no está autenticado, redirigimos al login
-    return <Navigate to="/login" />;
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    // En un futuro podrías validar si el token expiró o hacer una llamada al backend
+    setIsAuth(!!token);
+  }, []);
+
+  if (isAuth === null) {
+    // Mientras determina si hay autenticación (puede mostrar un spinner)
+    return <div className="flex items-center justify-center h-screen">Cargando...</div>;
   }
 
-  return <Outlet />;
+  return isAuth ? <Outlet /> : <Navigate to="/login" />;
 };
 
 export default PrivateRoute;
+

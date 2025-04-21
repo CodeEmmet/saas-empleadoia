@@ -1,30 +1,37 @@
-// src/router.tsx o src/App.tsx (según tu estructura)
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/Login';
+import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
-import Usuarios from './pages/Usuarios';
+/* import Clientes from './pages/Clientes'; */
+import DashboardLayout from './layouts/DashboardLayout';
 import PrivateRoute from './components/PrivateRoute';
 
 function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Redirige al login si no está autenticado */}
-        <Route path="/" element={<Navigate to="/login" />} />
-        
+        {/* Rutas públicas */}
+        <Route path="/" element={<Login />} />
         <Route path="/login" element={<Login />} />
-        
-        {/* Rutas protegidas */}
+        <Route path="/register" element={<Register />} />
+
+        {/* Rutas privadas (autenticadas) */}
         <Route element={<PrivateRoute />}>
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/usuarios" element={<Usuarios />} />
-          {/* Agrega otras rutas privadas aquí */}
+          <Route element={<DashboardLayout />}>
+            <Route path="/dashboard" element={<Dashboard />} />
+            {/* <Route path="/clientes" element={<Clientes />} /> */}
+            {/* Agregá más rutas internas protegidas */}
+          </Route>
         </Route>
+
+        {/* Fallback */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default AppRouter;
+
 
 
