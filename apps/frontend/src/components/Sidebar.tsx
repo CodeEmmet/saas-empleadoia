@@ -12,7 +12,7 @@ const Sidebar: React.FC = () => {
           <Link to="/dashboard" className={styles.link}>Dashboard</Link>
         </li>
         <li>
-          <Link to="/clientes" className={styles.link}>Clientes</Link>
+          <Link to="/pedidos" className={styles.link}>Pedidos</Link>
         </li>
         {/* Agrega más enlaces según sea necesario */}
       </ul>

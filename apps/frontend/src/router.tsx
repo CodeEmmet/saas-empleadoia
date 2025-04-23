@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
-/* import Clientes from './pages/Clientes'; */
+import Pedidos from './pages/Pedidos';
 import DashboardLayout from './layouts/DashboardLayout';
 import PrivateRoute from './components/PrivateRoute';
 
@@ -19,7 +19,7 @@ function AppRouter() {
         <Route element={<PrivateRoute />}>
           <Route element={<DashboardLayout />}>
             <Route path="/dashboard" element={<Dashboard />} />
-            {/* <Route path="/clientes" element={<Clientes />} /> */}
+            <Route path="/pedidos" element={<Pedidos />} />
             {/* Agregá más rutas internas protegidas */}
           </Route>
         </Route>
