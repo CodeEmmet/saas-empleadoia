@@ -28,11 +28,11 @@ import { DashboardModule } from './dashboard/dashboard.module';
     UsuariosModule,
     DashboardModule,
   ],
-  providers: [
+  /* providers: [
     {
       provide: APP_GUARD, // Usar el guardia globalmente
       useClass: JwtAuthGuard, // Aplica el guardia a todas las rutas
     },
-  ],
+  ], */
 })
 export class AppModule {}

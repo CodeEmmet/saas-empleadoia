@@ -1,6 +1,7 @@
-import { Controller, Post, Body, Get, Param, ParseIntPipe } from '@nestjs/common';
+import { Controller, Post, Body, Get, Put, Param, ParseIntPipe } from '@nestjs/common';
 import { PedidosService } from './pedidos.service';
 import { CreatePedidoDto } from './dto/create-pedido.dto';
+import { UpdatePedidoDto } from './dto/update-pedido.dto'; 
 
 @Controller('pedidos')
 export class PedidosController {
@@ -20,5 +21,11 @@ export class PedidosController {
   findOne(@Param('id', ParseIntPipe) id: number) {
     return this.pedidosService.findOne(id);
   }
+  
+  @Put(':id/estado')
+  async updateEstado(@Param('id') id: number, @Body() updatePedidoDto: UpdatePedidoDto) {
+    return this.pedidosService.updateEstado(id, updatePedidoDto);
+  }
+
 }
 

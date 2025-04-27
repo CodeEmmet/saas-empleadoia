@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { obtenerPedidos } from '../services/pedidoService';
+import { obtenerPedidos, actualizarEstadoPedido } from '../services/pedidoService';
 import styles from './Pedidos.module.scss';
 import PedidoRow from "../components/Pedidos/PedidoRow";
 
@@ -23,6 +23,7 @@ type Pedido = {
 export default function Pedidos() {
   const [pedidos, setPedidos] = useState<Pedido[]>([]);
   const [cargando, setCargando] = useState(true);
+  const [idAbierto, setIdAbierto] = useState<string | null>(null); // Estado para el pedido abierto
 
   useEffect(() => {
     const cargarPedidos = async () => {
@@ -38,6 +39,20 @@ export default function Pedidos() {
 
     cargarPedidos();
   }, []);
+
+  const actualizarEstadoLocal = async (pedidoId: number, nuevoEstado: string) => {
+    try {
+      await actualizarEstadoPedido(pedidoId, nuevoEstado);
+
+      setPedidos((prevPedidos) =>
+        prevPedidos.map((pedido) =>
+          pedido.id === pedidoId ? { ...pedido, estado: nuevoEstado } : pedido
+        )
+      );
+    } catch (error) {
+      console.error('Error actualizando estado del pedido:', error);
+    }
+  };
 
   return (
     <div className={styles.pedidosContainer}>
@@ -66,7 +81,13 @@ export default function Pedidos() {
           </thead>
           <tbody>
             {pedidos.map((pedido) => (
-              <PedidoRow key={pedido.id} pedido={pedido} />
+              <PedidoRow
+                key={pedido.id}
+                pedido={pedido}
+                idAbierto={idAbierto}
+                setIdAbierto={setIdAbierto} // Le pasamos el estado y la función para cambiarlo
+                actualizarEstadoLocal={actualizarEstadoLocal}
+              />
             ))}
           </tbody>
         </table>

@@ -4,6 +4,7 @@ import { Repository } from 'typeorm';
 import { Pedido } from './pedido.entity';
 import { PedidoItem } from './pedido-item.entity';
 import { CreatePedidoDto } from './dto/create-pedido.dto';
+import { UpdatePedidoDto } from './dto/update-pedido.dto';
 import { Cliente } from '../clientes/cliente.entity';
 import { Producto } from '../productos/producto.entity';
 
@@ -48,15 +49,28 @@ export class PedidosService {
     return this.pedidoRepo.save(pedido);
   }
 
-  findAll(): Promise<Pedido[]> {
-    return this.pedidoRepo.find({ relations: ['cliente', 'items', 'items.producto'] });
+  async findAll(): Promise<Pedido[]> {
+    return this.pedidoRepo.find({
+      relations: ['cliente', 'items', 'items.producto'],
+      order: { creadoEn: 'DESC' },
+    });
   }
-
+  
   async findOne(id: number): Promise<Pedido> {
     const pedido = await this.pedidoRepo.findOne({ where: { id } });
     if (!pedido) {
       throw new Error(`Pedido con ID ${id} no encontrado`);
     }
     return pedido;
-  }  
+  }
+
+  async updateEstado(id: number, updatePedidoDto: UpdatePedidoDto): Promise<Pedido> {
+    const pedido = await this.pedidoRepo.findOne({ where: { id } });
+    if (!pedido) {
+      throw new NotFoundException('Pedido no encontrado');
+    }
+
+    pedido.estado = updatePedidoDto.estado;
+    return this.pedidoRepo.save(pedido);
+  }
 }

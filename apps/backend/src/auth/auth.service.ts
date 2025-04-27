@@ -39,6 +39,11 @@ export class AuthService {
     };
   }
 
+  async findByUsername(username: string): Promise<Usuario | null> {
+    return this.usuarioRepo.findOneBy({ username });
+  }
+  
+
   async login(loginDto: LoginDto) {
     const { username, password } = loginDto;
     const usuario = await this.usuarioRepo.findOneBy({ username });
