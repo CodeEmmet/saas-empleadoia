@@ -1,3 +1,9 @@
-2025/04/29-02:44:07.989 47d0 Reusing MANIFEST C:\Users\admin_ntwks\OneDrive - Telefonica\Documents\Alexis\saas-empleadoia\apps\whatsapp\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
-2025/04/29-02:44:07.991 47d0 Recovering log #10
-2025/04/29-02:44:07.992 47d0 Reusing old log C:\Users\admin_ntwks\OneDrive - Telefonica\Documents\Alexis\saas-empleadoia\apps\whatsapp\.wwebjs_auth\session\Default\Local Storage\leveldb/000010.log 
+2025/05/03-22:36:52.485 82f0 Reusing MANIFEST C:\Users\admin_ntwks\OneDrive - Telefonica\Documents\Alexis\saas-empleadoia\apps\whatsapp\.wwebjs_auth\session\Default\Local Storage\leveldb/MANIFEST-000001
+2025/05/03-22:36:52.486 82f0 Recovering log #10
+2025/05/03-22:36:52.487 82f0 Reusing old log C:\Users\admin_ntwks\OneDrive - Telefonica\Documents\Alexis\saas-empleadoia\apps\whatsapp\.wwebjs_auth\session\Default\Local Storage\leveldb/000010.log 
+2025/05/04-00:40:38.170 36e4 Level-0 table #14: started
+2025/05/04-00:40:38.186 36e4 Level-0 table #14: 15085 bytes OK
+2025/05/04-00:40:38.192 36e4 Delete type=0 #10
+2025/05/05-16:45:56.774 34a0 Level-0 table #16: started
+2025/05/05-16:45:56.778 34a0 Level-0 table #16: 14260 bytes OK
+2025/05/05-16:45:56.782 34a0 Delete type=0 #13

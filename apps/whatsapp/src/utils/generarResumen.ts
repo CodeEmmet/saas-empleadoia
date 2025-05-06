@@ -1,5 +1,3 @@
-// apps/whatsapp/src/utils/generarResumen.ts
-
 import { ProductoPedido } from '../libs/ai/types/producto';
 
 export function generarResumen(productos: ProductoPedido[]): string {
