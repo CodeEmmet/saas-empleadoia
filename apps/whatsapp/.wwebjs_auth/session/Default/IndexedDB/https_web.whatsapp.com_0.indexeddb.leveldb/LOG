@@ -1,22 +1,14 @@
-2025/05/03-22:36:53.455 6868 Reusing MANIFEST C:\Users\admin_ntwks\OneDrive - Telefonica\Documents\Alexis\saas-empleadoia\apps\whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2025/05/03-22:36:53.456 6868 Recovering log #122
-2025/05/03-22:36:53.575 6868 Reusing old log C:\Users\admin_ntwks\OneDrive - Telefonica\Documents\Alexis\saas-empleadoia\apps\whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000122.log 
-2025/05/03-22:36:58.398 6ce4 Level-0 table #127: started
-2025/05/03-22:36:58.416 6ce4 Level-0 table #127: 843172 bytes OK
-2025/05/03-22:36:58.418 6ce4 Delete type=0 #122
-2025/05/03-22:36:58.419 6ce4 Manual compaction at level-0 from '\x004\x00\x00\x00' @ 72057594037927935 : 1 .. '\x005\x00\x00\x00' @ 0 : 0; will stop at (end)
-2025/05/03-22:36:59.885 6ce4 Compacting 1@1 + 1@2 files
-2025/05/03-22:36:59.971 6ce4 Generated table #128@1: 57905 keys, 2047312 bytes
-2025/05/03-22:36:59.971 6ce4 Compacted 1@1 + 1@2 files => 2047312 bytes
-2025/05/03-22:36:59.973 6ce4 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/05/03-22:36:59.973 6ce4 Delete type=2 #124
-2025/05/03-22:36:59.973 6ce4 Delete type=2 #127
-2025/05/04-21:24:13.002 50a8 Level-0 table #130: started
-2025/05/04-21:24:13.143 50a8 Level-0 table #130: 1160902 bytes OK
-2025/05/04-21:24:13.148 50a8 Delete type=0 #126
-2025/05/04-21:24:37.210 778 Compacting 1@1 + 1@2 files
-2025/05/04-21:24:37.510 778 Generated table #131@1: 61187 keys, 2107974 bytes
-2025/05/04-21:24:37.510 778 Compacted 1@1 + 1@2 files => 2107974 bytes
-2025/05/04-21:24:37.513 778 compacted to: files[ 0 0 1 0 0 0 0 ]
-2025/05/04-21:24:37.516 778 Delete type=2 #128
-2025/05/04-21:24:37.516 778 Delete type=2 #130
+2025/05/13-22:57:17.737 36a8 Reusing MANIFEST C:\Users\admin_ntwks\OneDrive - Telefonica\Documents\Alexis\saas-empleadoia\apps\whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/05/13-22:57:17.745 36a8 Recovering log #129
+2025/05/13-22:57:17.951 36a8 Reusing old log C:\Users\admin_ntwks\OneDrive - Telefonica\Documents\Alexis\saas-empleadoia\apps\whatsapp\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000129.log 
+2025/05/13-22:57:26.740 6c18 Level-0 table #134: started
+2025/05/13-22:57:26.911 6c18 Level-0 table #134: 910764 bytes OK
+2025/05/13-22:57:26.925 6c18 Delete type=0 #129
+2025/05/13-22:57:26.932 6c18 Manual compaction at level-0 from '\x005\x00\x00\x00' @ 72057594037927935 : 1 .. '\x006\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/13-22:57:32.598 6a54 Compacting 1@1 + 1@2 files
+2025/05/13-22:57:32.783 6a54 Generated table #135@1: 65365 keys, 2179921 bytes
+2025/05/13-22:57:32.784 6a54 Compacted 1@1 + 1@2 files => 2179921 bytes
+2025/05/13-22:57:32.786 6a54 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/05/13-22:57:32.787 6a54 Delete type=2 #131
+2025/05/13-22:57:32.787 6a54 Delete type=2 #134
+2025/05/13-23:02:36.738 36a8 Manual compaction at level-0 from '\x006\x00\x00\x00' @ 72057594037927935 : 1 .. '\x007\x00\x00\x00' @ 0 : 0; will stop at (end)

@@ -1,46 +1,17 @@
-[0503/223653.434:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
-[0503/223656.663:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Feature xr-spatial-tracking's parameters are ignored.", source:  (0)
-[0503/223656.663:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'attribution-reporting'.", source:  (0)
-[0503/223656.663:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'compute-pressure'.", source:  (0)
-[0503/223656.663:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.", source:  (0)
-[0503/223656.663:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'private-state-token-issuance'.", source:  (0)
-[0503/223656.663:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'shared-storage'.", source:  (0)
-[0503/223656.663:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'.", source:  (0)
-[0503/223656.663:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'private-state-token-redemption'.", source:  (0)
-[0503/223656.663:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'unload'.", source:  (0)
-[0503/223656.663:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'window-management'.", source:  (0)
-[0503/223658.734:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
-[0503/223701.557:INFO:CONSOLE(98)] "[Report Only] Refused to compile or instantiate WebAssembly module because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: "script-src data: blob: 'self' 'nonce-VqJnfuBP' 'report-sample' https://static.whatsapp.net https://*.youtube.com https://maps.googleapis.com https://maps.gstatic.com https://lens.google.com/upload".
-", source: https://static.whatsapp.net/rsrc.php/v4/yc/r/6_PqL6jt-iM.js (98)
-[0504/003032.022:WARNING:dns_config_service_win.cc(584)] Failed to read DnsConfig.
-[0504/003042.377:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
-[0504/012559.698:WARNING:dns_config_service_win.cc(584)] Failed to read DnsConfig.
-[0504/012604.728:WARNING:dns_config_service_win.cc(584)] Failed to read DnsConfig.
-[0504/012613.301:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
-[0504/040551.745:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
-[0504/155811.035:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
-[0504/172547.499:WARNING:dns_config_service_win.cc(584)] Failed to read DnsConfig.
-[0504/211424.052:WARNING:dns_config_service_win.cc(584)] Failed to read DnsConfig.
-[0504/211429.078:WARNING:dns_config_service_win.cc(584)] Failed to read DnsConfig.
-[0504/212031.799:WARNING:dns_config_service_win.cc(584)] Failed to read DnsConfig.
-[0504/212051.824:WARNING:dns_config_service_win.cc(584)] Failed to read DnsConfig.
-[0504/212413.027:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
-[0504/214755.197:INFO:CONSOLE(1770)] "Failed to parse video contentType: video/mp4; codecs=avc1.42000a", source: https://static.whatsapp.net/rsrc.php/v4ik3Z4/ys/l/rt/02zmnqLv8Dk.js (1770)
-[0504/214755.200:INFO:CONSOLE(1770)] "Failed to parse video contentType: video/mp4; codecs=hev1.1.6.L93.B0", source: https://static.whatsapp.net/rsrc.php/v4ik3Z4/ys/l/rt/02zmnqLv8Dk.js (1770)
-[0504/214801.572:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
-[0504/224422.477:WARNING:dns_config_service_win.cc(584)] Failed to read DnsConfig.
-[0504/224427.506:WARNING:dns_config_service_win.cc(584)] Failed to read DnsConfig.
-[0504/224437.558:WARNING:dns_config_service_win.cc(584)] Failed to read DnsConfig.
-[0504/224450.192:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
-[0504/224457.589:WARNING:dns_config_service_win.cc(584)] Failed to read DnsConfig.
-[0504/225945.099:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
-[0504/230017.978:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
-[0505/004212.635:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
-[0505/012540.851:WARNING:dns_config_service_win.cc(584)] Failed to read DnsConfig.
-[0505/012545.864:WARNING:dns_config_service_win.cc(584)] Failed to read DnsConfig.
-[0505/132542.300:WARNING:dns_config_service_win.cc(584)] Failed to read DnsConfig.
-[0505/132552.829:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
-[0505/152527.108:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
-[0505/162845.415:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
-[0505/172528.047:WARNING:dns_config_service_win.cc(584)] Failed to read DnsConfig.
-[0505/191948.512:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
+[0513/225717.625:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yY/r/mkiNlxq8gdy.js (157)
+[0513/225721.814:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Feature xr-spatial-tracking's parameters are ignored.", source:  (0)
+[0513/225721.815:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'attribution-reporting'.", source:  (0)
+[0513/225721.815:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'compute-pressure'.", source:  (0)
+[0513/225721.822:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'.", source:  (0)
+[0513/225721.822:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'private-state-token-issuance'.", source:  (0)
+[0513/225721.822:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'shared-storage'.", source:  (0)
+[0513/225721.823:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'shared-storage-select-url'.", source:  (0)
+[0513/225721.823:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'private-state-token-redemption'.", source:  (0)
+[0513/225721.823:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'unload'.", source:  (0)
+[0513/225721.823:INFO:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'window-management'.", source:  (0)
+[0513/225729.556:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yc/r/9FLxYgwpEra.js (157)
+[0513/230236.604:INFO:CONSOLE(1757)] "Failed to parse video contentType: video/mp4; codecs=avc1.42000a", source: https://static.whatsapp.net/rsrc.php/v4iuJ-4/yj/l/rt/TvTaQsCuHxp.js (1757)
+[0513/230236.604:INFO:CONSOLE(1757)] "Failed to parse video contentType: video/mp4; codecs=hev1.1.6.L93.B0", source: https://static.whatsapp.net/rsrc.php/v4iuJ-4/yj/l/rt/TvTaQsCuHxp.js (1757)
+[0513/230242.729:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yc/r/9FLxYgwpEra.js (157)
+[0513/231512.288:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yc/r/9FLxYgwpEra.js (157)
+[0513/231721.127:INFO:CONSOLE(157)] "Event handler of 'x-storagemutated-1' event must be added on the initial evaluation of worker script.", source: https://static.whatsapp.net/rsrc.php/v4/yc/r/9FLxYgwpEra.js (157)
